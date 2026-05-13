@@ -1,4 +1,4 @@
-<h1 align="center">🧬 AlphaFold3 部署与使用笔记</h1>
+<h1 align="center">🧬 AlphaFold3 部署与功能测试笔记</h1>
 
 <p align="center"><em>—— 2026.03.25</em></p>
 
