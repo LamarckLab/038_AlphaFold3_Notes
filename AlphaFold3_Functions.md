@@ -2,6 +2,17 @@
 #### 该文档用于记录 server 上跑 AlphaFold3 的各种命令
 ---
 
+*路径配置*
+```bash
+输入目录:   /data/lmk/alphafold3_inputs       # JSON 输入文件
+输出目录:   /data/lmk/alphafold3_outputs      # 预测结果 (cif + 置信度)
+参数目录:   /data/lmk/alphafold3_parameters   # 模型权重 af3.bin
+数据库目录: /data/lmk/alphafold3_databases    # MSA 数据库 (~627GB)
+```
+容器内挂载点分别为 `/af3_inputs`、`/af3_outputs`、`/af3_parameters`、`/af3_databases`
+
+---
+
 > **01 蛋白质结构预测 -- |单任务|不指定模板|默认参数|**
 ```bash
 docker run -it --rm \
